@@ -1,0 +1,14 @@
+/Users/fabiomans/RiderProjects/Validation/Validation/bin/Debug/net8.0/Validation
+/Users/fabiomans/RiderProjects/Validation/Validation/bin/Debug/net8.0/Validation.deps.json
+/Users/fabiomans/RiderProjects/Validation/Validation/bin/Debug/net8.0/Validation.runtimeconfig.json
+/Users/fabiomans/RiderProjects/Validation/Validation/bin/Debug/net8.0/Validation.dll
+/Users/fabiomans/RiderProjects/Validation/Validation/bin/Debug/net8.0/Validation.pdb
+/Users/fabiomans/RiderProjects/Validation/Validation/obj/Debug/net8.0/Validation.GeneratedMSBuildEditorConfig.editorconfig
+/Users/fabiomans/RiderProjects/Validation/Validation/obj/Debug/net8.0/Validation.AssemblyInfoInputs.cache
+/Users/fabiomans/RiderProjects/Validation/Validation/obj/Debug/net8.0/Validation.AssemblyInfo.cs
+/Users/fabiomans/RiderProjects/Validation/Validation/obj/Debug/net8.0/Validation.csproj.CoreCompileInputs.cache
+/Users/fabiomans/RiderProjects/Validation/Validation/obj/Debug/net8.0/Validation.dll
+/Users/fabiomans/RiderProjects/Validation/Validation/obj/Debug/net8.0/refint/Validation.dll
+/Users/fabiomans/RiderProjects/Validation/Validation/obj/Debug/net8.0/Validation.pdb
+/Users/fabiomans/RiderProjects/Validation/Validation/obj/Debug/net8.0/Validation.genruntimeconfig.cache
+/Users/fabiomans/RiderProjects/Validation/Validation/obj/Debug/net8.0/ref/Validation.dll
