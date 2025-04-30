@@ -24,7 +24,7 @@ public class AntiFraudValidator : IValidator
         // Em um cenário real, aqui seria feita uma requisição HTTP para um serviço de antifraude
         
         // Simulando alguma lógica para determinar se é fraude ou não
-        bool isSuspicious = person.Name.Contains("Test") || person.Age > 120;
+        bool isSuspicious = person.Name.Contains("Test") || person.Age > 65;
         
         return Task.FromResult(!isSuspicious);
     }

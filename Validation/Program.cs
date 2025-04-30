@@ -33,29 +33,35 @@ using Validation;
 // Configurando o motor de validação
 var engine = new ValidationEngine();
         
-// Registrando templates
+// // Registrando templates
+// engine.RegisterTemplate(new ValidationTemplate
+// {
+//     TemplateName = "BetHolanda",
+//     ValidatorsToExecute = new List<string> { "AgeValidator", "DocumentValidator" }
+// });
+//         
 engine.RegisterTemplate(new ValidationTemplate
 {
-    TemplateName = "Cadastro",
-    ValidatorsToExecute = new List<string> { "AgeValidator", "DocumentValidator" }
-});
-        
-engine.RegisterTemplate(new ValidationTemplate
-{
-    TemplateName = "Pagamento",
+    TemplateName = "BetArgentina",
     ValidatorsToExecute = new List<string> { "AgeValidator", "AntiFraudValidator", "DocumentValidator" }
 });
+
+// engine.RegisterTemplate(new ValidationTemplate
+// {
+//     TemplateName = "PoolBet",
+//     ValidatorsToExecute = new List<string> { "AgeValidator" }
+// });
         
 // Dados de exemplo
 var person = new PersonData
 {
     Name = "João Silva",
-    Age = 25,
-    DocumentNumber = "12345678"
+    Age = 67,
+    DocumentNumber = "12344444444445678"
 };
         
 // Executando validação com template "Cadastro"
-var resultCadastro = await engine.ValidateAsync("Cadastro", person);
+var resultCadastro = await engine.ValidateAsync("BetArgentina", person);
 Console.WriteLine($"Resultado validação Cadastro: {resultCadastro.IsValid}");
 if (!resultCadastro.IsValid)
 {
@@ -67,13 +73,13 @@ if (!resultCadastro.IsValid)
 }
         
 // Executando validação com template "Pagamento"
-var resultPagamento = await engine.ValidateAsync("Pagamento", person);
-Console.WriteLine($"Resultado validação Pagamento: {resultPagamento.IsValid}");
-if (!resultPagamento.IsValid)
-{
-    Console.WriteLine("Erros:");
-    foreach (var error in resultPagamento.Errors)
-    {
-        Console.WriteLine($"- {error}");
-    }
-}
+// var resultPagamento = await engine.ValidateAsync("Pagamento", person);
+// Console.WriteLine($"Resultado validação Pagamento: {resultPagamento.IsValid}");
+// if (!resultPagamento.IsValid)
+// {
+//     Console.WriteLine("Erros:");
+//     foreach (var error in resultPagamento.Errors)
+//     {
+//         Console.WriteLine($"- {error}");
+//     }
+// }
